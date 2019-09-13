@@ -11,12 +11,12 @@
 
 // Signals in
 int lowerSensor = D1;
-int upperSensor = D3;
+int upperSensor = D2;
 
 // Signals out
-int pump = D8;
-int lowerSensorLight = D2;
-int upperSensorLight = D4;
+int lowerLight = D5;
+int upperLight = D6;
+int pump = D7;
 
 // Internals
 bool pumpIsRunning = false;
@@ -24,28 +24,49 @@ bool pumpIsRunning = false;
 void setup() {
 
   // Initialiser med sensorer av. Hvis de faktisk er neddykket i det Wemos resettes, vil dette oppdateres i første sykel i loopen
+  pinMode(lowerSensor, INPUT);
+  pinMode(upperSensor, INPUT);
+//  digitalWrite(lowerLight, LOW);
+  pinMode(lowerLight, OUTPUT);
+  pinMode(upperLight, OUTPUT);
+//  digitalWrite(upperLight, LOW);
+  
   
   // set up built-in LED
-  pinMode(LED_BUILTIN, OUTPUT);
-  digitalWrite(LED_BUILTIN, HIGH); // built-in is inverse of the common cathode RGB LED, i.e. is it a anode LED?
+//  pinMode(LED_BUILTIN, OUTPUT);
+//  digitalWrite(LED_BUILTIN, HIGH); // built-in is inverse of the common cathode RGB LED, i.e. is it a anode LED?
 
 
 }
 
 void loop() {
 
+  int lowerSensorValue = digitalRead(lowerSensor);
+  digitalWrite(lowerLight, lowerSensorValue);
+  
+  int upperSensorValue = digitalRead(upperSensor);
+  digitalWrite(upperLight, upperSensorValue);
+
   // Logikk
+//  if (digitalRead(upperSensor) == HIGH) {
+//    digitalWrite(LED_BUILTIN, HIGH);
+//    digitalWrite(upperLight, HIGH);
+//  }
+//  else {
+//    digitalWrite(LED_BUILTIN, LOW);
+//    digitalWrite(upperLight, LOW);
+//  }
   // Hvis pumpen ikke går og B aktiveres, start pumpen.
-    if (!pumpIsRunning and digitalRead(upperSensor) == HIGH) {
-      digitalWrite(pump, HIGH);
-      pumpIsRunning = true;
-    }
+//    if (!pumpIsRunning and digitalRead(upperSensor) == HIGH) {
+//      digitalWrite(pump, HIGH);
+//      pumpIsRunning = true;
+//    }
 
     // Hvis A svitsjes av, stopp pumpen.
-    if (pumpIsRunning and lowerSensorValue == HIGH) {
-      digitalWrite(pump, LOW);
-      pumpIsRunning = false;
-    }
+//    if (pumpIsRunning and lowerSensorValue == HIGH) {
+//      digitalWrite(pump, LOW);
+//      pumpIsRunning = false;
+//    }
 
   // Feil-sjekking
   // Hvis det er feil på nedre sensor: Hvor lenge pumpa går om gangen bør tidsbegrenses. Bruke stoppeklokke for måle hvor lang tid det tar å tømme brønnen, dette er ganske konstant. Aktiver warning (lys og melding) om at nedre sensor streiker)
