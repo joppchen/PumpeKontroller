@@ -44,7 +44,7 @@ void loop() {
   digitalWrite(lowerLight, digitalRead(lowerSensor));
   digitalWrite(upperLight, digitalRead(upperSensor));
 
-  // Logikk
+  // Logikk  <- Mer robust logikk: hvis begge sensorene er på, slå på pumpen. Hvis begge sensorene slås av, slå av pumpen.
   // Hvis pumpen ikke går og øverste sensor aktiveres, start pumpen.
     if (!pumpIsRunning and digitalRead(upperSensor) == HIGH) {
       digitalWrite(pump, HIGH);
@@ -56,6 +56,10 @@ void loop() {
       digitalWrite(pump, LOW);
       pumpIsRunning = false;
     }
+
+  // Bugs
+  // Hvis øvre sensor aktiveres først, gir det litt spenning på pumpelyset - hvorfor det? --> det er fordi pumpelyset slås av og på kontiuerlig hvis kun øverste sensor er aktivert.
+      // Da vil også logikken ikke henge med (sånn som den er kodet nå, men det kan jo ikke skje fysisk sett, så det er greit).
 
   // Feil-sjekking
   // Hvis det er feil på nedre sensor: Hvor lenge pumpa går om gangen bør tidsbegrenses. Bruke stoppeklokke for måle hvor lang tid det tar å tømme brønnen, dette er ganske konstant. Aktiver warning (lys og melding) om at nedre sensor streiker)
