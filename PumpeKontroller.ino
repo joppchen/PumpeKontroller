@@ -10,23 +10,19 @@
 // PROSJEKT 1)
 
 // Signals in
-int lowerSensor = D1;
-int upperSensor = D2;
+int sensor1 = D1;
+int sensor2 = D2;
 
 // Signals out
-int lowerLight = D5;
-int upperLight = D6;
 int pump = D7;
 
 void setup() {
 
   // Definer input-pins
-  pinMode(lowerSensor, INPUT);
-  pinMode(upperSensor, INPUT);
+  pinMode(sensor1, INPUT);
+  pinMode(sensor2, INPUT);
 
   // Definer output-pins
-  pinMode(lowerLight, OUTPUT);
-  pinMode(upperLight, OUTPUT);
   pinMode(pump, OUTPUT);
   
   
@@ -37,35 +33,16 @@ void setup() {
 
 void loop() {
 
-  // Tenn status-lampene for sensorene etterhvert som sensorene aktiveres.
-  digitalWrite(lowerLight, digitalRead(lowerSensor));
-  digitalWrite(upperLight, digitalRead(upperSensor));
-
   // Logikk  <- Mer robust logikk: hvis begge sensorene er på, slå på pumpen. Hvis begge sensorene slås av, slå av pumpen.
-  if (digitalRead(lowerSensor) == HIGH && digitalRead(upperSensor) == HIGH) {
+  if (digitalRead(sensor1) == HIGH && digitalRead(sensor2) == HIGH) {
       digitalWrite(pump, HIGH);
   }
-  else if (digitalRead(lowerSensor) == LOW && digitalRead(upperSensor) == LOW) {
+  else if (digitalRead(sensor1) == LOW && digitalRead(sensor2) == LOW) {
     digitalWrite(pump, LOW);
   }
-//  // Hvis pumpen ikke går og øverste sensor aktiveres, start pumpen.
-//    if (!pumpIsRunning and digitalRead(upperSensor) == HIGH) {
-//      digitalWrite(pump, HIGH);
-//      pumpIsRunning = true;
-//    }
-//
-//    // Hvis nederste sensor de-aktiveres, stopp pumpen.
-//    if (pumpIsRunning and digitalRead(lowerSensor) == LOW) {
-//      digitalWrite(pump, LOW);
-//      pumpIsRunning = false;
-//    }
-
-  // Bugs
-  // Hvis øvre sensor aktiveres først, gir det litt spenning på pumpelyset - hvorfor det? --> det er fordi pumpelyset slås av og på kontiuerlig hvis kun øverste sensor er aktivert.
-      // Da vil også logikken ikke henge med (sånn som den er kodet nå, men det kan jo ikke skje fysisk sett, så det er greit).
 
   // Feil-sjekking
-  // Hvis det er feil på nedre sensor: Hvor lenge pumpa går om gangen bør tidsbegrenses. Bruke stoppeklokke for måle hvor lang tid det tar å tømme brønnen, dette er ganske konstant. Aktiver warning (lys og melding) om at nedre sensor streiker)
+  // Hvis det er feil på nedre sensor: Hvor lenge pumpa går om gangen bør tidsbegrenses. Bruke stoppeklokke for måle hvor lang tid det tar å tømme brønnen, dette er ganske konstant, evt. mål volumstrømmen fra pumpa opp i en bøtte (f.eks. hvor lang tid tar det å pumpe 10 liter?). Aktiver warning (lys og melding) om at nedre sensor streiker)
   // Hvis det er feil på øvre sensor, ha en 3. back-up sensor sammen med øvre sensor. rett over som starter pumpa hvis sensoren aktiveres og pumpa ikke er i gang.
   // Hvis det er feil på pumpa, eller batteriet er tomt: Sensor 2 og 3 er aktivert en viss tidsvarighet. Hvis pumpa går, skal vannet synke under topp-sensorene ganske raskt - bruke stoppeklokke for å finne tida.
   
