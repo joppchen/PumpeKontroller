@@ -29,7 +29,7 @@ L Device:R R7
 U 1 1 5E4F0641
 P 6350 4150
 F 0 "R7" H 6420 4196 50  0000 L CNN
-F 1 "R" H 6420 4105 50  0000 L CNN
+F 1 "100kΩ" H 6420 4105 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6280 4150 50  0001 C CNN
 F 3 "~" H 6350 4150 50  0001 C CNN
 	1    6350 4150
@@ -40,40 +40,18 @@ L Device:R R2
 U 1 1 5E4F1667
 P 4450 4150
 F 0 "R2" H 4520 4196 50  0000 L CNN
-F 1 "R" H 4520 4105 50  0000 L CNN
+F 1 "100kΩ" H 4520 4105 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4380 4150 50  0001 C CNN
 F 3 "~" H 4450 4150 50  0001 C CNN
 	1    4450 4150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:BC548 Q2
-U 1 1 5E4F2631
-P 5850 3850
-F 0 "Q2" V 6178 3850 50  0000 C CNN
-F 1 "BC548" V 6087 3850 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6050 3775 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5850 3850 50  0001 L CNN
-	1    5850 3850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Transistor_BJT:BC548 Q1
-U 1 1 5E4F51E4
-P 4050 3850
-F 0 "Q1" V 4378 3850 50  0000 C CNN
-F 1 "BC548" V 4000 3900 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4250 3775 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4050 3850 50  0001 L CNN
-	1    4050 3850
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R R4
 U 1 1 5E4F60FE
 P 5850 2200
 F 0 "R4" V 5643 2200 50  0000 C CNN
-F 1 "R" V 5734 2200 50  0000 C CNN
+F 1 "220Ω" V 5734 2200 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5780 2200 50  0001 C CNN
 F 3 "~" H 5850 2200 50  0001 C CNN
 	1    5850 2200
@@ -84,7 +62,7 @@ L Device:R R5
 U 1 1 5E4F6A1F
 P 5850 2800
 F 0 "R5" V 5643 2800 50  0000 C CNN
-F 1 "R" V 5734 2800 50  0000 C CNN
+F 1 "220Ω" V 5734 2800 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5780 2800 50  0001 C CNN
 F 3 "~" H 5850 2800 50  0001 C CNN
 	1    5850 2800
@@ -168,17 +146,6 @@ F 3 "~" H 5250 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R3
-U 1 1 5E510EAD
-P 5850 1500
-F 0 "R3" V 5643 1500 50  0000 C CNN
-F 1 "R" V 5734 1500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5780 1500 50  0001 C CNN
-F 3 "~" H 5850 1500 50  0001 C CNN
-	1    5850 1500
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR0103
 U 1 1 5E51199C
 P 4900 1500
@@ -197,8 +164,8 @@ Wire Wire Line
 	6250 1500 6250 2300
 Wire Wire Line
 	6250 2300 6500 2300
-Text Notes 5050 1200 0    50   ~ 0
-Signal til å starte pumpe 
+Text Notes 4850 1200 0    50   ~ 0
+Signal til å starte pumpe.\nForeløpig representert med LED som\nvisuelt signal på at logikken fungerer.
 Text Notes 5150 3000 0    50   ~ 0
 Status-lampe sensor 1
 Text Notes 5150 2400 0    50   ~ 0
@@ -366,4 +333,37 @@ Wire Wire Line
 	5450 3450 6800 3450
 Wire Wire Line
 	5400 1500 5700 1500
+$Comp
+L Device:R R3
+U 1 1 5E510EAD
+P 5850 1500
+F 0 "R3" V 5643 1500 50  0000 C CNN
+F 1 "220Ω" V 5734 1500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5780 1500 50  0001 C CNN
+F 3 "~" H 5850 1500 50  0001 C CNN
+	1    5850 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q2
+U 1 1 5E5079FA
+P 5850 3850
+F 0 "Q2" V 6178 3850 50  0000 C CNN
+F 1 "BC547" V 6087 3850 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6050 3775 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5850 3850 50  0001 L CNN
+	1    5850 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 5E508FB9
+P 4050 3850
+F 0 "Q1" V 4378 3850 50  0000 C CNN
+F 1 "BC547" V 4287 3850 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4250 3775 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4050 3850 50  0001 L CNN
+	1    4050 3850
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
