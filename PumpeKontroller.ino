@@ -12,9 +12,15 @@
 // Signals in
 int sensor1 = D1;
 int sensor2 = D2;
+int sensor3 = D3; // TODO: D3 oppfører seg rart. Hvordan få den til å oppføre seg på samme måte som D1?
+int sensor4 = D4; // TODO: D4 oppfører seg rart. Hvordan få den til å oppføre seg på samme måte som D2?
+int sensor5 = D5; // Oppfører seg på samme måte som D1
+int sensor6 = D6; // Oppfører seg på samme måte som D2
+int sensor7 = D7; // Oppfører seg på samme måte som D1
+int sensor8 = D8; // Oppfører seg på samme måte som D2
 
 // Signals out
-int pump = D7;
+int pump = D0; // Oppfører seg på samme måte som D7, jeg bruker hermed D0 til å styre pumpen
 
 void setup() {
 
