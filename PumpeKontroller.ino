@@ -18,9 +18,6 @@ int lowerLight = D5;
 int upperLight = D6;
 int pump = D7;
 
-// Internals
-bool pumpIsRunning = false;
-
 void setup() {
 
   // Definer input-pins
@@ -45,17 +42,23 @@ void loop() {
   digitalWrite(upperLight, digitalRead(upperSensor));
 
   // Logikk  <- Mer robust logikk: hvis begge sensorene er på, slå på pumpen. Hvis begge sensorene slås av, slå av pumpen.
-  // Hvis pumpen ikke går og øverste sensor aktiveres, start pumpen.
-    if (!pumpIsRunning and digitalRead(upperSensor) == HIGH) {
+  if (digitalRead(lowerSensor) == HIGH && digitalRead(upperSensor) == HIGH) {
       digitalWrite(pump, HIGH);
-      pumpIsRunning = true;
-    }
-
-    // Hvis nederste sensor de-aktiveres, stopp pumpen.
-    if (pumpIsRunning and digitalRead(lowerSensor) == LOW) {
-      digitalWrite(pump, LOW);
-      pumpIsRunning = false;
-    }
+  }
+  else if (digitalRead(lowerSensor) == LOW && digitalRead(upperSensor) == LOW) {
+    digitalWrite(pump, LOW);
+  }
+//  // Hvis pumpen ikke går og øverste sensor aktiveres, start pumpen.
+//    if (!pumpIsRunning and digitalRead(upperSensor) == HIGH) {
+//      digitalWrite(pump, HIGH);
+//      pumpIsRunning = true;
+//    }
+//
+//    // Hvis nederste sensor de-aktiveres, stopp pumpen.
+//    if (pumpIsRunning and digitalRead(lowerSensor) == LOW) {
+//      digitalWrite(pump, LOW);
+//      pumpIsRunning = false;
+//    }
 
   // Bugs
   // Hvis øvre sensor aktiveres først, gir det litt spenning på pumpelyset - hvorfor det? --> det er fordi pumpelyset slås av og på kontiuerlig hvis kun øverste sensor er aktivert.
