@@ -12,15 +12,17 @@
 // Signals in
 int sensor1 = D1;
 int sensor2 = D2;
-int sensor3 = D3; // TODO: D3 oppfører seg rart. Hvordan få den til å oppføre seg på samme måte som D1?
-int sensor4 = D4; // TODO: D4 oppfører seg rart. Hvordan få den til å oppføre seg på samme måte som D2?
-int sensor5 = D5; // Oppfører seg på samme måte som D1
-int sensor6 = D6; // Oppfører seg på samme måte som D2
-int sensor7 = D7; // Oppfører seg på samme måte som D1
-int sensor8 = D8; // Oppfører seg på samme måte som D2
+//int sensor3 = D3; // TODO: D3 oppfører seg rart. Hvordan få den til å oppføre seg på samme måte som D1?
+//int sensor4 = D4; // TODO: D4 oppfører seg rart. Hvordan få den til å oppføre seg på samme måte som D2?
+//int sensor5 = D5; // Oppfører seg på samme måte som D1
+//int sensor6 = D6; // Oppfører seg på samme måte som D2
+//int sensor7 = D7; // Oppfører seg på samme måte som D1
+//int sensor8 = D8; // Oppfører seg på samme måte som D2
+//int sensorAnalog = A0;;
 
 // Signals out
 int pump = D0; // Oppfører seg på samme måte som D7, jeg bruker hermed D0 til å styre pumpen
+int pumpLight = D7;
 
 void setup() {
 
@@ -30,6 +32,7 @@ void setup() {
 
   // Definer output-pins
   pinMode(pump, OUTPUT);
+  pinMode(pumpLight, OUTPUT);
   
   
   // Turn on built-in LED when the controller has power
@@ -42,9 +45,11 @@ void loop() {
   // Logikk  <- Mer robust logikk: hvis begge sensorene er på, slå på pumpen. Hvis begge sensorene slås av, slå av pumpen.
   if (digitalRead(sensor1) == HIGH && digitalRead(sensor2) == HIGH) {
       digitalWrite(pump, HIGH);
+      digitalWrite(pumpLight, HIGH);
   }
   else if (digitalRead(sensor1) == LOW && digitalRead(sensor2) == LOW) {
     digitalWrite(pump, LOW);
+    digitalWrite(pumpLight, LOW);
   }
 
   // Feil-sjekking
