@@ -345,10 +345,10 @@ F 3 "~" H 5850 1500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Transistor_BJT:BC547 Q?
+L Transistor_BJT:BC547 Q2
 U 1 1 5E5079FA
 P 5850 3850
-F 0 "Q?" V 6178 3850 50  0000 C CNN
+F 0 "Q2" V 6178 3850 50  0000 C CNN
 F 1 "BC547" V 6087 3850 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6050 3775 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5850 3850 50  0001 L CNN
@@ -356,10 +356,10 @@ F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5850 3850 50  0001 L CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Transistor_BJT:BC547 Q?
+L Transistor_BJT:BC547 Q1
 U 1 1 5E508FB9
 P 4050 3850
-F 0 "Q?" V 4378 3850 50  0000 C CNN
+F 0 "Q1" V 4378 3850 50  0000 C CNN
 F 1 "BC547" V 4287 3850 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4250 3775 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4050 3850 50  0001 L CNN
