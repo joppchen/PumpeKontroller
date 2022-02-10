@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Module:WeMos_D1_mini U1
-U 1 1 5E4EF27A
-P 6900 2600
-F 0 "U1" H 6900 1529 50  0000 C CNN
-F 1 "WeMos_D1_mini" H 6900 1620 50  0000 C CNN
-F 2 "Module:WEMOS_D1_mini_light" H 6900 1711 50  0000 C CNN
-F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 5050 1450 50  0001 C CNN
-	1    6900 2600
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:R R7
 U 1 1 5E4F0641
 P 6350 4150
@@ -49,45 +38,45 @@ $EndComp
 $Comp
 L Device:R R4
 U 1 1 5E4F60FE
-P 4450 4100
-F 0 "R4" V 4243 4100 50  0000 C CNN
-F 1 "100Ω" V 4334 4100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4380 4100 50  0001 C CNN
-F 3 "~" H 4450 4100 50  0001 C CNN
-	1    4450 4100
+P 4450 4550
+F 0 "R4" V 4243 4550 50  0000 C CNN
+F 1 "100Ω" V 4334 4550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4380 4550 50  0001 C CNN
+F 3 "~" H 4450 4550 50  0001 C CNN
+	1    4450 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R5
 U 1 1 5E4F6A1F
-P 7000 4100
-F 0 "R5" V 6793 4100 50  0000 C CNN
-F 1 "100Ω" V 6884 4100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6930 4100 50  0001 C CNN
-F 3 "~" H 7000 4100 50  0001 C CNN
-	1    7000 4100
+P 7000 4550
+F 0 "R5" V 6793 4550 50  0000 C CNN
+F 1 "100Ω" V 6884 4550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6930 4550 50  0001 C CNN
+F 3 "~" H 7000 4550 50  0001 C CNN
+	1    7000 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D1
 U 1 1 5E4F70FA
-P 4450 4550
-F 0 "D1" H 4443 4766 50  0000 C CNN
-F 1 "LED" H 4443 4675 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 4450 4550 50  0001 C CNN
-F 3 "~" H 4450 4550 50  0001 C CNN
-	1    4450 4550
+P 4450 4100
+F 0 "D1" H 4443 4316 50  0000 C CNN
+F 1 "LED" H 4443 4225 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4450 4100 50  0001 C CNN
+F 3 "~" H 4450 4100 50  0001 C CNN
+	1    4450 4100
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED D2
 U 1 1 5E4F7BB2
-P 7000 4550
-F 0 "D2" H 6993 4766 50  0000 C CNN
-F 1 "LED" H 6993 4675 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 7000 4550 50  0001 C CNN
-F 3 "~" H 7000 4550 50  0001 C CNN
-	1    7000 4550
+P 7000 4100
+F 0 "D2" H 6993 4316 50  0000 C CNN
+F 1 "LED" H 6993 4225 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 7000 4100 50  0001 C CNN
+F 3 "~" H 7000 4100 50  0001 C CNN
+	1    7000 4100
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -162,38 +151,26 @@ Wire Wire Line
 	6000 1500 6250 1500
 Wire Wire Line
 	6250 1500 6250 2300
-Wire Wire Line
-	6250 2300 6500 2300
 Text Notes 4850 1200 0    50   ~ 0
 Signal til å starte pumpe.\nForeløpig representert med LED som\nvisuelt signal på at logikken fungerer.
 Text Notes 7200 4800 1    50   ~ 0
-Status-lampe sensor 1
-Text Notes 4650 4800 1    50   ~ 0
 Status-lampe sensor 2
+Text Notes 4650 4800 1    50   ~ 0
+Status-lampe sensor 1
 Wire Wire Line
 	7000 4400 7000 4250
-Wire Wire Line
-	6250 2800 6250 2500
-Wire Wire Line
-	6250 2500 6500 2500
 Wire Wire Line
 	4450 4850 4450 4700
 Wire Wire Line
 	4450 4400 4450 4250
 Wire Wire Line
 	4450 3950 4450 3750
-Wire Wire Line
-	6200 2200 6200 2400
-Wire Wire Line
-	6200 2400 6500 2400
 Text Notes 5700 5100 0    50   ~ 0
-Vannsensor 1
-Text Notes 3300 5100 0    50   ~ 0
 Vannsensor 2
+Text Notes 3300 5100 0    50   ~ 0
+Vannsensor 1
 Wire Wire Line
 	6800 3400 6800 3450
-Wire Wire Line
-	6350 2900 6500 2900
 $Comp
 L power:GND #PWR0104
 U 1 1 5E521AF2
@@ -218,14 +195,6 @@ F 3 "~" H 5850 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6050 3750 6350 3750
-Wire Wire Line
-	6500 2800 6300 2800
-Wire Wire Line
-	6300 2800 6300 3050
-Wire Wire Line
-	6300 3050 3850 3050
-Wire Wire Line
-	6350 2900 6350 3750
 Wire Wire Line
 	5450 4900 5450 3750
 Wire Wire Line
@@ -265,7 +234,7 @@ F 3 "~" H 3450 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 3050 3850 3750
+	3850 2900 3850 3750
 Wire Wire Line
 	3650 3750 3850 3750
 Connection ~ 3850 3750
@@ -289,9 +258,7 @@ Wire Wire Line
 NoConn ~ 7300 3000
 NoConn ~ 7300 2700
 NoConn ~ 7300 2600
-NoConn ~ 7000 3400
 NoConn ~ 6500 3100
-NoConn ~ 6500 3000
 NoConn ~ 6500 2700
 NoConn ~ 6500 2600
 NoConn ~ 6500 2200
@@ -370,4 +337,212 @@ Wire Wire Line
 Wire Wire Line
 	7000 3750 6350 3750
 Connection ~ 5450 3450
+$Comp
+L SRD-05VDC-SL-C:SRD-05VDC-SL-C K1
+U 1 1 61905479
+P 2900 2000
+F 0 "K1" V 2946 1670 50  0000 R CNN
+F 1 "SRD-05VDC-SL-C" V 2855 1670 50  0000 R CNN
+F 2 "SRD-05VDC-SL-C:RELAY_SRD-05VDC-SL-C" H 2900 2000 50  0001 L BNN
+F 3 "" H 2900 2000 50  0001 L BNN
+F 4 "IPC-7251" H 2900 2000 50  0001 L BNN "STANDARD"
+F 5 "SONGLE RELAY" H 2900 2000 50  0001 L BNN "MANUFACTURER"
+	1    2900 2000
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 6500 2500
+NoConn ~ 6500 2400
+$Comp
+L Device:R R8
+U 1 1 6190A448
+P 4000 2650
+F 0 "R8" V 4207 2650 50  0000 C CNN
+F 1 "1kΩ" V 4116 2650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3930 2650 50  0001 C CNN
+F 3 "~" H 4000 2650 50  0001 C CNN
+	1    4000 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 6191AA0D
+P 4300 2650
+F 0 "R9" V 4507 2650 50  0000 C CNN
+F 1 "1kΩ" V 4416 2650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4230 2650 50  0001 C CNN
+F 3 "~" H 4300 2650 50  0001 C CNN
+	1    4300 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 3000 5000 2650
+Wire Wire Line
+	5000 2650 4450 2650
+Wire Wire Line
+	6250 2300 6500 2300
+Wire Wire Line
+	6500 3000 5000 3000
+$Comp
+L Transistor_BJT:BC547 Q3
+U 1 1 6193208C
+P 3650 2650
+F 0 "Q3" H 3841 2604 50  0000 L CNN
+F 1 "BC547" H 3841 2695 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3850 2575 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 3650 2650 50  0001 L CNN
+	1    3650 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 61935FC2
+P 3550 2450
+F 0 "#PWR0107" H 3550 2200 50  0001 C CNN
+F 1 "GND" H 3555 2277 50  0000 C CNN
+F 2 "" H 3550 2450 50  0001 C CNN
+F 3 "" H 3550 2450 50  0001 C CNN
+	1    3550 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3550 2850 3550 3000
+Wire Wire Line
+	3550 3000 3100 3000
+$Comp
+L Device:D D4
+U 1 1 61942A2F
+P 2950 3000
+F 0 "D4" H 2950 2784 50  0000 C CNN
+F 1 "STPS3L60RL" H 2950 2875 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp" H 2950 3000 50  0001 C CNN
+F 3 "~" H 2950 3000 50  0001 C CNN
+	1    2950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3000 2800 2300
+Connection ~ 2800 3000
+Wire Wire Line
+	3100 2300 3100 3000
+Connection ~ 3100 3000
+$Comp
+L Motor:Motor_DC M1
+U 1 1 6196066A
+P 3250 1000
+F 0 "M1" H 3408 996 50  0000 L CNN
+F 1 "Motor_DC" H 3408 905 50  0000 L CNN
+F 2 "Connector:Banana_Jack_2Pin" H 3250 910 50  0001 C CNN
+F 3 "~" H 3250 910 50  0001 C CNN
+	1    3250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery BT1
+U 1 1 61963284
+P 2750 800
+F 0 "BT1" V 2505 800 50  0000 C CNN
+F 1 "Battery 12V" V 2596 800 50  0000 C CNN
+F 2 "Battery:BatteryHolder_Keystone_1042_1x18650" V 2750 860 50  0001 C CNN
+F 3 "~" V 2750 860 50  0001 C CNN
+	1    2750 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F1
+U 1 1 61964673
+P 3100 800
+F 0 "F1" V 2903 800 50  0000 C CNN
+F 1 "Fuse" V 2994 800 50  0000 C CNN
+F 2 "Fuse:Fuse_1806_4516Metric_Pad1.57x1.80mm_HandSolder" V 3030 800 50  0001 C CNN
+F 3 "~" H 3100 800 50  0001 C CNN
+	1    3100 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 6196B1BC
+P 3900 950
+F 0 "R10" H 3970 996 50  0000 L CNN
+F 1 "2.2kΩ" H 3970 905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3830 950 50  0001 C CNN
+F 3 "~" H 3900 950 50  0001 C CNN
+	1    3900 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 6196E4FC
+P 3900 1250
+F 0 "D5" H 3893 1466 50  0000 C CNN
+F 1 "LED" H 3893 1375 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 3900 1250 50  0001 C CNN
+F 3 "~" H 3900 1250 50  0001 C CNN
+	1    3900 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 800  3250 800 
+Connection ~ 3250 800 
+Wire Wire Line
+	3250 1300 3250 1500
+Wire Wire Line
+	3250 1500 2900 1500
+Wire Wire Line
+	2900 1500 2900 1700
+Wire Wire Line
+	3250 1500 3900 1500
+Wire Wire Line
+	3900 1500 3900 1400
+Connection ~ 3250 1500
+Wire Wire Line
+	2550 800  2550 1500
+Wire Wire Line
+	2550 1500 2800 1500
+Wire Wire Line
+	2800 1500 2800 1700
+NoConn ~ 3100 1700
+$Comp
+L power:+5V #PWR0108
+U 1 1 61982F49
+P 2800 4150
+F 0 "#PWR0108" H 2800 4000 50  0001 C CNN
+F 1 "+5V" V 2815 4278 50  0000 L CNN
+F 2 "" H 2800 4150 50  0001 C CNN
+F 3 "" H 2800 4150 50  0001 C CNN
+	1    2800 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 619853EC
+P 2800 4150
+F 0 "#PWR0109" H 2800 3900 50  0001 C CNN
+F 1 "GND" V 2805 4022 50  0000 R CNN
+F 2 "" H 2800 4150 50  0001 C CNN
+F 3 "" H 2800 4150 50  0001 C CNN
+	1    2800 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3000 2800 4050
+$Comp
+L MCU_Module:WeMos_D1_mini U1
+U 1 1 5E4EF27A
+P 6900 2600
+F 0 "U1" H 6900 1529 50  0000 C CNN
+F 1 "WeMos_D1_mini" H 6900 1620 50  0000 C CNN
+F 2 "Module:WEMOS_D1_mini_light" H 6900 1711 50  0000 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 5050 1450 50  0001 C CNN
+	1    6900 2600
+	-1   0    0    1   
+$EndComp
+NoConn ~ 7000 3400
+Text Notes 2700 4500 1    50   ~ 0
+From Wemos 5.5V out (haiker på USB inn?)
+Wire Wire Line
+	6350 2800 6500 2800
+Wire Wire Line
+	6350 2800 6350 3750
+Wire Wire Line
+	3850 2900 6500 2900
 $EndSCHEMATC

@@ -38,45 +38,45 @@ $EndComp
 $Comp
 L Device:R R4
 U 1 1 5E4F60FE
-P 4450 4100
-F 0 "R4" V 4243 4100 50  0000 C CNN
-F 1 "100Ω" V 4334 4100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4380 4100 50  0001 C CNN
-F 3 "~" H 4450 4100 50  0001 C CNN
-	1    4450 4100
+P 4450 4550
+F 0 "R4" V 4243 4550 50  0000 C CNN
+F 1 "100Ω" V 4334 4550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4380 4550 50  0001 C CNN
+F 3 "~" H 4450 4550 50  0001 C CNN
+	1    4450 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R5
 U 1 1 5E4F6A1F
-P 7000 4100
-F 0 "R5" V 6793 4100 50  0000 C CNN
-F 1 "100Ω" V 6884 4100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6930 4100 50  0001 C CNN
-F 3 "~" H 7000 4100 50  0001 C CNN
-	1    7000 4100
+P 7000 4550
+F 0 "R5" V 6793 4550 50  0000 C CNN
+F 1 "100Ω" V 6884 4550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6930 4550 50  0001 C CNN
+F 3 "~" H 7000 4550 50  0001 C CNN
+	1    7000 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D1
 U 1 1 5E4F70FA
-P 4450 4550
-F 0 "D1" H 4443 4766 50  0000 C CNN
-F 1 "LED" H 4443 4675 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 4450 4550 50  0001 C CNN
-F 3 "~" H 4450 4550 50  0001 C CNN
-	1    4450 4550
+P 4450 4100
+F 0 "D1" H 4443 4316 50  0000 C CNN
+F 1 "LED" H 4443 4225 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4450 4100 50  0001 C CNN
+F 3 "~" H 4450 4100 50  0001 C CNN
+	1    4450 4100
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED D2
 U 1 1 5E4F7BB2
-P 7000 4550
-F 0 "D2" H 6993 4766 50  0000 C CNN
-F 1 "LED" H 6993 4675 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 7000 4550 50  0001 C CNN
-F 3 "~" H 7000 4550 50  0001 C CNN
-	1    7000 4550
+P 7000 4100
+F 0 "D2" H 6993 4316 50  0000 C CNN
+F 1 "LED" H 6993 4225 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 7000 4100 50  0001 C CNN
+F 3 "~" H 7000 4100 50  0001 C CNN
+	1    7000 4100
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -154,9 +154,9 @@ Wire Wire Line
 Text Notes 4850 1200 0    50   ~ 0
 Signal til å starte pumpe.\nForeløpig representert med LED som\nvisuelt signal på at logikken fungerer.
 Text Notes 7200 4800 1    50   ~ 0
-Status-lampe sensor 1
-Text Notes 4650 4800 1    50   ~ 0
 Status-lampe sensor 2
+Text Notes 4650 4800 1    50   ~ 0
+Status-lampe sensor 1
 Wire Wire Line
 	7000 4400 7000 4250
 Wire Wire Line
@@ -166,9 +166,9 @@ Wire Wire Line
 Wire Wire Line
 	4450 3950 4450 3750
 Text Notes 5700 5100 0    50   ~ 0
-Vannsensor 1
-Text Notes 3300 5100 0    50   ~ 0
 Vannsensor 2
+Text Notes 3300 5100 0    50   ~ 0
+Vannsensor 1
 Wire Wire Line
 	6800 3400 6800 3450
 $Comp
@@ -195,8 +195,6 @@ F 3 "~" H 5850 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6050 3750 6350 3750
-Wire Wire Line
-	6300 3050 3850 3050
 Wire Wire Line
 	5450 4900 5450 3750
 Wire Wire Line
@@ -236,7 +234,7 @@ F 3 "~" H 3450 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 3050 3850 3750
+	3850 2900 3850 3750
 Wire Wire Line
 	3650 3750 3850 3750
 Connection ~ 3850 3750
@@ -354,44 +352,14 @@ F 5 "SONGLE RELAY" H 2900 2000 50  0001 L BNN "MANUFACTURER"
 $EndComp
 NoConn ~ 6500 2500
 NoConn ~ 6500 2400
-$Comp
-L Device:R R8
-U 1 1 6190A448
-P 4000 2650
-F 0 "R8" V 4207 2650 50  0000 C CNN
-F 1 "1kΩ" V 4116 2650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3930 2650 50  0001 C CNN
-F 3 "~" H 4000 2650 50  0001 C CNN
-	1    4000 2650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 6191AA0D
-P 4300 2650
-F 0 "R9" V 4507 2650 50  0000 C CNN
-F 1 "1kΩ" V 4416 2650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4230 2650 50  0001 C CNN
-F 3 "~" H 4300 2650 50  0001 C CNN
-	1    4300 2650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5000 3000 5000 2650
 Wire Wire Line
 	5000 2650 4450 2650
 Wire Wire Line
-	6500 2800 6300 2800
-Wire Wire Line
 	6250 2300 6500 2300
 Wire Wire Line
 	6500 3000 5000 3000
-Wire Wire Line
-	6350 2900 6350 3750
-Wire Wire Line
-	6300 2800 6300 3050
-Wire Wire Line
-	6350 2900 6500 2900
 $Comp
 L Transistor_BJT:BC547 Q3
 U 1 1 6193208C
@@ -549,4 +517,32 @@ $EndComp
 NoConn ~ 7000 3400
 Text Notes 2700 4500 1    50   ~ 0
 From Wemos 5.5V out (haiker på USB inn?)
+Wire Wire Line
+	6350 2800 6500 2800
+Wire Wire Line
+	6350 2800 6350 3750
+Wire Wire Line
+	3850 2900 6500 2900
+$Comp
+L Device:R R9
+U 1 1 6191AA0D
+P 4000 2650
+F 0 "R9" V 4207 2650 50  0000 C CNN
+F 1 "1kΩ" V 4116 2650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3930 2650 50  0001 C CNN
+F 3 "~" H 4000 2650 50  0001 C CNN
+	1    4000 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 6190A448
+P 4300 2650
+F 0 "R8" V 4507 2650 50  0000 C CNN
+F 1 "1kΩ" V 4416 2650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4230 2650 50  0001 C CNN
+F 3 "~" H 4300 2650 50  0001 C CNN
+	1    4300 2650
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
