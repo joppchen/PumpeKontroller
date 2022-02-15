@@ -126,33 +126,16 @@ $EndComp
 $Comp
 L Device:LED D3
 U 1 1 5E510889
-P 5250 1500
-F 0 "D3" H 5243 1716 50  0000 C CNN
-F 1 "LED" H 5243 1625 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 5250 1500 50  0001 C CNN
-F 3 "~" H 5250 1500 50  0001 C CNN
-	1    5250 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 5E51199C
-P 4900 1500
-F 0 "#PWR0103" H 4900 1250 50  0001 C CNN
-F 1 "GND" V 4905 1372 50  0000 R CNN
-F 2 "" H 4900 1500 50  0001 C CNN
-F 3 "" H 4900 1500 50  0001 C CNN
-	1    4900 1500
+P 2400 2600
+F 0 "D3" H 2393 2816 50  0000 C CNN
+F 1 "LED" H 2393 2725 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 2400 2600 50  0001 C CNN
+F 3 "~" H 2400 2600 50  0001 C CNN
+	1    2400 2600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4900 1500 5100 1500
-Wire Wire Line
-	6000 1500 6250 1500
-Wire Wire Line
-	6250 1500 6250 2300
-Text Notes 4850 1200 0    50   ~ 0
-Signal til å starte pumpe.\nForeløpig representert med LED som\nvisuelt signal på at logikken fungerer.
+Text Notes 2200 3300 1    50   ~ 0
+Visuell indikator på at\n12V-reléet skal være aktivert.
 Text Notes 7200 4800 1    50   ~ 0
 Status-lampe sensor 2
 Text Notes 4650 4800 1    50   ~ 0
@@ -295,18 +278,16 @@ Wire Wire Line
 	6900 1600 6900 1800
 Wire Wire Line
 	5450 3450 6800 3450
-Wire Wire Line
-	5400 1500 5700 1500
 $Comp
 L Device:R R3
 U 1 1 5E510EAD
-P 5850 1500
-F 0 "R3" V 5643 1500 50  0000 C CNN
-F 1 "220Ω" V 5734 1500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5780 1500 50  0001 C CNN
-F 3 "~" H 5850 1500 50  0001 C CNN
-	1    5850 1500
-	0    1    1    0   
+P 2400 3000
+F 0 "R3" V 2193 3000 50  0000 C CNN
+F 1 "370Ω" V 2284 3000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2330 3000 50  0001 C CNN
+F 3 "~" H 2400 3000 50  0001 C CNN
+	1    2400 3000
+	-1   0    0    1   
 $EndComp
 $Comp
 L Transistor_BJT:BC547 Q2
@@ -344,8 +325,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 2650 4450 2650
 Wire Wire Line
-	6250 2300 6500 2300
-Wire Wire Line
 	6500 3000 5000 3000
 $Comp
 L Transistor_BJT:BC547 Q3
@@ -370,26 +349,18 @@ F 3 "" H 3550 2450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3550 2850 3550 3000
-Wire Wire Line
-	3550 3000 3100 3000
+	3550 3150 3100 3150
 $Comp
 L Device:D D4
 U 1 1 61942A2F
-P 2950 3000
-F 0 "D4" H 2950 2784 50  0000 C CNN
-F 1 "STPS3L60RL" H 2950 2875 50  0000 C CNN
-F 2 "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp" H 2950 3000 50  0001 C CNN
-F 3 "~" H 2950 3000 50  0001 C CNN
-	1    2950 3000
+P 2950 3150
+F 0 "D4" H 2950 2934 50  0000 C CNN
+F 1 "STPS3L60RL" H 2950 3025 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp" H 2950 3150 50  0001 C CNN
+F 3 "~" H 2950 3150 50  0001 C CNN
+	1    2950 3150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2800 3000 2800 2300
-Connection ~ 2800 3000
-Wire Wire Line
-	3100 2300 3100 3000
-Connection ~ 3100 3000
 NoConn ~ 3100 1700
 $Comp
 L MCU_Module:WeMos_D1_mini U1
@@ -403,8 +374,6 @@ F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 5050 1450 50  00
 	-1   0    0    1   
 $EndComp
 NoConn ~ 7000 3400
-Text Notes 2700 4500 1    50   ~ 0
-From Wemos 5.5V out (haiker på USB inn?)
 Wire Wire Line
 	6350 2800 6500 2800
 Wire Wire Line
@@ -472,5 +441,23 @@ Wire Wire Line
 Wire Wire Line
 	6900 3550 6900 3400
 Wire Wire Line
-	2800 3000 2800 5200
+	2800 3150 2800 5200
+Wire Wire Line
+	3550 2850 3550 3150
+Connection ~ 2800 3150
+Wire Wire Line
+	2800 2450 2800 2300
+Wire Wire Line
+	3100 2300 3100 3150
+Connection ~ 3100 3150
+Wire Wire Line
+	2400 2450 2800 2450
+Connection ~ 2800 2450
+Wire Wire Line
+	2800 2450 2800 3150
+Wire Wire Line
+	2400 3150 2800 3150
+Wire Wire Line
+	2400 2850 2400 2750
+NoConn ~ 6500 2300
 $EndSCHEMATC
