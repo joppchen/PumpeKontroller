@@ -65,6 +65,10 @@ void loop() {
   // Legg til kode for pumpe 2
   // Legg til kode for pumpe 3
   // Logikk: Opptil 4 veloppdragne sensorer (kan ha to til hvis jeg skjønner meg på D3 og D4), opptil 3 pumper
+  // IDEAs:
+    // Use mono jacks (signal connectors) for connecting sensors in a flexible way
+    // Use barrel jacks (power connectors) for connecting pumps in a flexible way
+    // Use e.g. slide switch to select between different modes, e.g. A: 1 pump, 2 sensors, B: 1 pump, 3 sensors, etc.
   
 }
 

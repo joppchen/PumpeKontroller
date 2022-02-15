@@ -14,450 +14,955 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R R7
-U 1 1 5E4F0641
-P 6350 4150
-F 0 "R7" H 6420 4196 50  0000 L CNN
-F 1 "100kΩ" H 6420 4105 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6280 4150 50  0001 C CNN
-F 3 "~" H 6350 4150 50  0001 C CNN
-	1    6350 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
+L Device:R R11
 U 1 1 5E4F1667
-P 3850 4150
-F 0 "R2" H 3920 4196 50  0000 L CNN
-F 1 "100kΩ" H 3920 4105 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3780 4150 50  0001 C CNN
-F 3 "~" H 3850 4150 50  0001 C CNN
-	1    3850 4150
+P 9550 5500
+F 0 "R11" H 9620 5546 50  0000 L CNN
+F 1 "100kΩ" H 9620 5455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9480 5500 50  0001 C CNN
+F 3 "~" H 9550 5500 50  0001 C CNN
+	1    9550 5500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
+L Device:R R12
 U 1 1 5E4F60FE
-P 4450 4550
-F 0 "R4" V 4243 4550 50  0000 C CNN
-F 1 "100Ω" V 4334 4550 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4380 4550 50  0001 C CNN
-F 3 "~" H 4450 4550 50  0001 C CNN
-	1    4450 4550
-	1    0    0    -1  
+P 9950 5800
+F 0 "R12" V 9743 5800 50  0000 C CNN
+F 1 "100Ω" V 9834 5800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9880 5800 50  0001 C CNN
+F 3 "~" H 9950 5800 50  0001 C CNN
+	1    9950 5800
+	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R5
-U 1 1 5E4F6A1F
-P 7000 4550
-F 0 "R5" V 6793 4550 50  0000 C CNN
-F 1 "100Ω" V 6884 4550 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6930 4550 50  0001 C CNN
-F 3 "~" H 7000 4550 50  0001 C CNN
-	1    7000 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D1
-U 1 1 5E4F70FA
-P 4450 4100
-F 0 "D1" H 4443 4316 50  0000 C CNN
-F 1 "LED" H 4443 4225 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 4450 4100 50  0001 C CNN
-F 3 "~" H 4450 4100 50  0001 C CNN
-	1    4450 4100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D2
-U 1 1 5E4F7BB2
-P 7000 4100
-F 0 "D2" H 6993 4316 50  0000 C CNN
-F 1 "LED" H 6993 4225 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 7000 4100 50  0001 C CNN
-F 3 "~" H 7000 4100 50  0001 C CNN
-	1    7000 4100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Switch:SW_Push SW2
-U 1 1 5E4FC9EF
-P 5650 4900
-F 0 "SW2" H 5650 5185 50  0000 C CNN
-F 1 "SW_Push" H 5650 5094 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_1x02_P7.62mm_Drill2.5mm" H 5650 5100 50  0001 C CNN
-F 3 "~" H 5650 5100 50  0001 C CNN
-	1    5650 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW1
+L Switch:SW_Push SW10
 U 1 1 5E4FD71E
-P 3250 4900
-F 0 "SW1" H 3250 5185 50  0000 C CNN
-F 1 "SW_Push" H 3250 5094 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_1x02_P7.62mm_Drill2.5mm" H 3250 5100 50  0001 C CNN
-F 3 "~" H 3250 5100 50  0001 C CNN
-	1    3250 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0101
-U 1 1 5E501E3E
-P 7000 4850
-F 0 "#PWR0101" H 7000 4600 50  0001 C CNN
-F 1 "GND" V 7005 4722 50  0000 R CNN
-F 2 "" H 7000 4850 50  0001 C CNN
-F 3 "" H 7000 4850 50  0001 C CNN
-	1    7000 4850
+P 9000 6000
+F 0 "SW10" H 9000 6285 50  0000 C CNN
+F 1 "SW_Push" H 9000 6194 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P7.62mm_Drill2.5mm" H 9000 6200 50  0001 C CNN
+F 3 "~" H 9000 6200 50  0001 C CNN
+	1    9000 6000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5E50B588
-P 4450 4850
-F 0 "#PWR0102" H 4450 4600 50  0001 C CNN
-F 1 "GND" V 4455 4722 50  0000 R CNN
-F 2 "" H 4450 4850 50  0001 C CNN
-F 3 "" H 4450 4850 50  0001 C CNN
-	1    4450 4850
+P 9950 5950
+F 0 "#PWR0102" H 9950 5700 50  0001 C CNN
+F 1 "GND" V 9955 5822 50  0000 R CNN
+F 2 "" H 9950 5950 50  0001 C CNN
+F 3 "" H 9950 5950 50  0001 C CNN
+	1    9950 5950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D3
+L Device:LED D52
 U 1 1 5E510889
-P 2400 2600
-F 0 "D3" H 2393 2816 50  0000 C CNN
-F 1 "LED" H 2393 2725 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 2400 2600 50  0001 C CNN
-F 3 "~" H 2400 2600 50  0001 C CNN
-	1    2400 2600
-	0    1    1    0   
+P 8850 2050
+F 0 "D52" H 8843 2266 50  0000 C CNN
+F 1 "LED" H 8843 2175 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 8850 2050 50  0001 C CNN
+F 3 "~" H 8850 2050 50  0001 C CNN
+	1    8850 2050
+	0    -1   -1   0   
 $EndComp
-Text Notes 2200 3300 1    50   ~ 0
-Visuell indikator på at\n12V-reléet skal være aktivert.
-Text Notes 7200 4800 1    50   ~ 0
-Status-lampe sensor 2
-Text Notes 4650 4800 1    50   ~ 0
+Text Notes 10350 6250 1    50   ~ 0
 Status-lampe sensor 1
-Wire Wire Line
-	7000 4400 7000 4250
-Wire Wire Line
-	4450 4850 4450 4700
-Wire Wire Line
-	4450 4400 4450 4250
-Wire Wire Line
-	4450 3950 4450 3750
-Text Notes 5700 5100 0    50   ~ 0
-Vannsensor 2
-Text Notes 3300 5100 0    50   ~ 0
+Text Notes 9200 6250 0    50   ~ 0
 Vannsensor 1
-Wire Wire Line
-	6800 3400 6800 3450
-$Comp
-L power:GND #PWR0104
-U 1 1 5E521AF2
-P 6350 4550
-F 0 "#PWR0104" H 6350 4300 50  0001 C CNN
-F 1 "GND" H 6355 4377 50  0000 C CNN
-F 2 "" H 6350 4550 50  0001 C CNN
-F 3 "" H 6350 4550 50  0001 C CNN
-	1    6350 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 5E5248D8
-P 5850 4400
-F 0 "R6" H 5920 4446 50  0000 L CNN
-F 1 "1MΩ" H 5920 4355 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5780 4400 50  0001 C CNN
-F 3 "~" H 5850 4400 50  0001 C CNN
-	1    5850 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 3750 6350 3750
-Wire Wire Line
-	5450 4900 5450 3750
-Wire Wire Line
-	5450 3750 5650 3750
-Connection ~ 5450 3750
-Wire Wire Line
-	5450 3750 5450 3450
-Wire Wire Line
-	5850 4900 5850 4550
-Wire Wire Line
-	5850 4250 5850 4050
-Wire Wire Line
-	6350 4550 6350 4300
-Wire Wire Line
-	6350 4000 6350 3750
-Connection ~ 6350 3750
 $Comp
 L power:GND #PWR0105
 U 1 1 5E53B3D5
-P 3850 4550
-F 0 "#PWR0105" H 3850 4300 50  0001 C CNN
-F 1 "GND" H 3855 4377 50  0000 C CNN
-F 2 "" H 3850 4550 50  0001 C CNN
-F 3 "" H 3850 4550 50  0001 C CNN
-	1    3850 4550
+P 9550 5650
+F 0 "#PWR0105" H 9550 5400 50  0001 C CNN
+F 1 "GND" H 9555 5477 50  0000 C CNN
+F 2 "" H 9550 5650 50  0001 C CNN
+F 3 "" H 9550 5650 50  0001 C CNN
+	1    9550 5650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
+L Device:R R91
 U 1 1 5E53CA8F
-P 3450 4400
-F 0 "R1" H 3520 4446 50  0000 L CNN
-F 1 "1MΩ" H 3520 4355 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3380 4400 50  0001 C CNN
-F 3 "~" H 3450 4400 50  0001 C CNN
-	1    3450 4400
-	1    0    0    -1  
+P 8800 5850
+F 0 "R91" H 8870 5896 50  0000 L CNN
+F 1 "1MΩ" H 8870 5805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8730 5850 50  0001 C CNN
+F 3 "~" H 8800 5850 50  0001 C CNN
+	1    8800 5850
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 2900 3850 3750
+	9000 5350 8800 5350
+$Comp
+L Device:R R53
+U 1 1 5E510EAD
+P 8850 2350
+F 0 "R53" V 8643 2350 50  0000 C CNN
+F 1 "370Ω" V 8734 2350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8780 2350 50  0001 C CNN
+F 3 "~" H 8850 2350 50  0001 C CNN
+	1    8850 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q10
+U 1 1 5E508FB9
+P 9200 5450
+F 0 "Q10" V 9528 5450 50  0000 C CNN
+F 1 "BC547" V 9437 5450 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9400 5375 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 9200 5450 50  0001 L CNN
+	1    9200 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D51
+U 1 1 61942A2F
+P 9150 2500
+F 0 "D51" H 9150 2284 50  0000 C CNN
+F 1 "STPS3L60RL" H 9150 2375 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp" H 9150 2500 50  0001 C CNN
+F 3 "~" H 9150 2500 50  0001 C CNN
+	1    9150 2500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9300 1300
+$Comp
+L Connector:Barrel_Jack J50
+U 1 1 6209C40C
+P 9000 900
+F 0 "J50" V 9011 1088 50  0000 L CNN
+F 1 "Barrel_Jack" V 9102 1088 50  0000 L CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 9050 860 50  0001 C CNN
+F 3 "~" H 9050 860 50  0001 C CNN
+	1    9000 900 
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	3650 3750 3850 3750
-Connection ~ 3850 3750
+	9000 1300 8900 1200
+Connection ~ 9000 2500
 Wire Wire Line
-	3850 3750 3850 4000
+	9300 1900 9300 2050
 Wire Wire Line
-	3450 4900 3450 4550
+	9000 1900 9000 2500
 Wire Wire Line
-	3450 4250 3450 4050
+	9000 2500 8850 2500
+Text GLabel 7650 4350 3    50   Output ~ 0
+Pump2
+Text GLabel 7550 4350 3    50   Output ~ 0
+Pump3
+Text GLabel 7850 4350 3    50   Output ~ 0
+Sensor3
+Text GLabel 7750 4350 3    50   Output ~ 0
+Sensor4
+Text GLabel 4450 5250 1    50   Input ~ 0
+Sensor3
+Text GLabel 1950 5250 1    50   Input ~ 0
+Sensor4
 Wire Wire Line
-	3050 4900 3050 3750
-Wire Wire Line
-	3050 3450 5450 3450
-Wire Wire Line
-	3250 3750 3050 3750
-Connection ~ 3050 3750
-Wire Wire Line
-	3050 3750 3050 3450
-Wire Wire Line
-	3850 4300 3850 4550
-NoConn ~ 7300 3000
-NoConn ~ 7300 2700
-NoConn ~ 7300 2600
-NoConn ~ 6500 3100
-NoConn ~ 6500 2700
-NoConn ~ 6500 2600
-NoConn ~ 6500 2200
-Wire Wire Line
-	7000 4700 7000 4850
+	6950 3750 6950 3950
 $Comp
 L power:GND #PWR0106
 U 1 1 5E54BD8A
-P 6900 1450
-F 0 "#PWR0106" H 6900 1200 50  0001 C CNN
-F 1 "GND" H 6905 1277 50  0000 C CNN
-F 2 "" H 6900 1450 50  0001 C CNN
-F 3 "" H 6900 1450 50  0001 C CNN
-	1    6900 1450
-	-1   0    0    1   
+P 6800 3950
+F 0 "#PWR0106" H 6800 3700 50  0001 C CNN
+F 1 "GND" H 6805 3777 50  0000 C CNN
+F 2 "" H 6800 3950 50  0001 C CNN
+F 3 "" H 6800 3950 50  0001 C CNN
+	1    6800 3950
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6900 1450 6900 1600
+	6800 3950 6950 3950
+Connection ~ 6950 3950
+Wire Wire Line
+	9100 1200 9100 1300
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5E54CD09
-P 7100 1600
-F 0 "#FLG0101" H 7100 1675 50  0001 C CNN
-F 1 "PWR_FLAG" V 7100 1728 50  0000 L CNN
-F 2 "" H 7100 1600 50  0001 C CNN
-F 3 "~" H 7100 1600 50  0001 C CNN
-	1    7100 1600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7100 1600 6900 1600
-Connection ~ 6900 1600
-Wire Wire Line
-	6900 1600 6900 1800
-Wire Wire Line
-	5450 3450 6800 3450
-$Comp
-L Device:R R3
-U 1 1 5E510EAD
-P 2400 3000
-F 0 "R3" V 2193 3000 50  0000 C CNN
-F 1 "370Ω" V 2284 3000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2330 3000 50  0001 C CNN
-F 3 "~" H 2400 3000 50  0001 C CNN
-	1    2400 3000
-	-1   0    0    1   
-$EndComp
-$Comp
-L Transistor_BJT:BC547 Q2
-U 1 1 5E5079FA
-P 5850 3850
-F 0 "Q2" V 6178 3850 50  0000 C CNN
-F 1 "BC547" V 6087 3850 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6050 3775 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5850 3850 50  0001 L CNN
-	1    5850 3850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Transistor_BJT:BC547 Q1
-U 1 1 5E508FB9
-P 3450 3850
-F 0 "Q1" V 3778 3850 50  0000 C CNN
-F 1 "BC547" V 3687 3850 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3650 3775 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 3450 3850 50  0001 L CNN
-	1    3450 3850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3850 3750 4450 3750
-Wire Wire Line
-	7000 3950 7000 3750
-Wire Wire Line
-	7000 3750 6350 3750
-Connection ~ 5450 3450
-NoConn ~ 6500 2500
-NoConn ~ 6500 2400
-Wire Wire Line
-	5000 3000 5000 2650
-Wire Wire Line
-	5000 2650 4450 2650
-Wire Wire Line
-	6500 3000 5000 3000
-$Comp
-L Transistor_BJT:BC547 Q3
-U 1 1 6193208C
-P 3650 2650
-F 0 "Q3" H 3841 2604 50  0000 L CNN
-F 1 "BC547" H 3841 2695 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3850 2575 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 3650 2650 50  0001 L CNN
-	1    3650 2650
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 61935FC2
-P 3550 2450
-F 0 "#PWR0107" H 3550 2200 50  0001 C CNN
-F 1 "GND" H 3555 2277 50  0000 C CNN
-F 2 "" H 3550 2450 50  0001 C CNN
-F 3 "" H 3550 2450 50  0001 C CNN
-	1    3550 2450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3550 3150 3100 3150
-$Comp
-L Device:D D4
-U 1 1 61942A2F
-P 2950 3150
-F 0 "D4" H 2950 2934 50  0000 C CNN
-F 1 "STPS3L60RL" H 2950 3025 50  0000 C CNN
-F 2 "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp" H 2950 3150 50  0001 C CNN
-F 3 "~" H 2950 3150 50  0001 C CNN
-	1    2950 3150
+P 6950 3750
+F 0 "#FLG0101" H 6950 3825 50  0001 C CNN
+F 1 "PWR_FLAG" V 6950 3878 50  0000 L CNN
+F 2 "" H 6950 3750 50  0001 C CNN
+F 3 "~" H 6950 3750 50  0001 C CNN
+	1    6950 3750
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3100 1700
+$Comp
+L Device:LED D10
+U 1 1 5E4F70FA
+P 9950 5500
+F 0 "D10" H 9943 5716 50  0000 C CNN
+F 1 "LED" H 9943 5625 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 9950 5500 50  0001 C CNN
+F 3 "~" H 9950 5500 50  0001 C CNN
+	1    9950 5500
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9400 5350 9550 5350
+Connection ~ 9550 5350
+Wire Wire Line
+	9550 5350 9950 5350
+Text Notes 8500 6000 1    50   ~ 10
+NOTE: R91 is only to\nillustrate the poor\nconductivity of fresh water!\nDo not add to PCB!
+Connection ~ 8800 5350
+Wire Wire Line
+	8800 5350 8800 5700
+Wire Wire Line
+	9200 5650 9200 6000
+$Comp
+L Device:R R21
+U 1 1 5E4F0641
+P 7000 5500
+F 0 "R21" H 7070 5546 50  0000 L CNN
+F 1 "100kΩ" H 7070 5455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6930 5500 50  0001 C CNN
+F 3 "~" H 7000 5500 50  0001 C CNN
+	1    7000 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5E4F6A1F
+P 7400 5800
+F 0 "R22" V 7193 5800 50  0000 C CNN
+F 1 "100Ω" V 7284 5800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7330 5800 50  0001 C CNN
+F 3 "~" H 7400 5800 50  0001 C CNN
+	1    7400 5800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D20
+U 1 1 5E4F7BB2
+P 7400 5500
+F 0 "D20" H 7393 5716 50  0000 C CNN
+F 1 "LED" H 7393 5625 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 7400 5500 50  0001 C CNN
+F 3 "~" H 7400 5500 50  0001 C CNN
+	1    7400 5500
+	0    1    -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW20
+U 1 1 5E4FC9EF
+P 6450 6000
+F 0 "SW20" H 6450 6285 50  0000 C CNN
+F 1 "SW_Push" H 6450 6194 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P7.62mm_Drill2.5mm" H 6450 6200 50  0001 C CNN
+F 3 "~" H 6450 6200 50  0001 C CNN
+	1    6450 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5E501E3E
+P 7400 5950
+F 0 "#PWR0101" H 7400 5700 50  0001 C CNN
+F 1 "GND" V 7405 5822 50  0000 R CNN
+F 2 "" H 7400 5950 50  0001 C CNN
+F 3 "" H 7400 5950 50  0001 C CNN
+	1    7400 5950
+	1    0    0    -1  
+$EndComp
+Text Notes 7800 6250 1    50   ~ 0
+Status-lampe sensor 2
+Text Notes 6650 6200 0    50   ~ 0
+Vannsensor 2
+$Comp
+L power:GND #PWR0104
+U 1 1 5E521AF2
+P 7000 5650
+F 0 "#PWR0104" H 7000 5400 50  0001 C CNN
+F 1 "GND" H 7005 5477 50  0000 C CNN
+F 2 "" H 7000 5650 50  0001 C CNN
+F 3 "" H 7000 5650 50  0001 C CNN
+	1    7000 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R92
+U 1 1 5E5248D8
+P 6250 5850
+F 0 "R92" H 6320 5896 50  0000 L CNN
+F 1 "1MΩ" H 6320 5805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6180 5850 50  0001 C CNN
+F 3 "~" H 6250 5850 50  0001 C CNN
+	1    6250 5850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q20
+U 1 1 5E5079FA
+P 6650 5450
+F 0 "Q20" V 6978 5450 50  0000 C CNN
+F 1 "BC547" V 6887 5450 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6850 5375 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 6650 5450 50  0001 L CNN
+	1    6650 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 5350 7000 5350
+Connection ~ 7000 5350
+Text Notes 5950 6000 1    50   ~ 10
+NOTE: R92 is only to\nillustrate the poor\nconductivity of fresh water!\nDo not add to PCB!
+Wire Wire Line
+	6650 5600 6650 5650
+Wire Wire Line
+	7000 5350 7400 5350
+Wire Wire Line
+	11050 6400 8500 6400
+Wire Wire Line
+	5950 6400 5950 5350
+Wire Wire Line
+	8500 6400 8500 5350
+Wire Wire Line
+	8500 5350 8800 5350
+Connection ~ 8500 6400
+Wire Wire Line
+	8500 6400 5950 6400
+$Comp
+L Device:R R31
+U 1 1 621AED47
+P 4450 5500
+F 0 "R31" H 4520 5546 50  0000 L CNN
+F 1 "100kΩ" H 4520 5455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4380 5500 50  0001 C CNN
+F 3 "~" H 4450 5500 50  0001 C CNN
+	1    4450 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R32
+U 1 1 621AED4D
+P 4850 5800
+F 0 "R32" V 4643 5800 50  0000 C CNN
+F 1 "100Ω" V 4734 5800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4780 5800 50  0001 C CNN
+F 3 "~" H 4850 5800 50  0001 C CNN
+	1    4850 5800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D30
+U 1 1 621AED53
+P 4850 5500
+F 0 "D30" H 4843 5716 50  0000 C CNN
+F 1 "LED" H 4843 5625 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4850 5500 50  0001 C CNN
+F 3 "~" H 4850 5500 50  0001 C CNN
+	1    4850 5500
+	0    1    -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW30
+U 1 1 621AED59
+P 3900 6000
+F 0 "SW30" H 3900 6285 50  0000 C CNN
+F 1 "SW_Push" H 3900 6194 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P7.62mm_Drill2.5mm" H 3900 6200 50  0001 C CNN
+F 3 "~" H 3900 6200 50  0001 C CNN
+	1    3900 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 621AED5F
+P 4850 5950
+F 0 "#PWR0103" H 4850 5700 50  0001 C CNN
+F 1 "GND" V 4855 5822 50  0000 R CNN
+F 2 "" H 4850 5950 50  0001 C CNN
+F 3 "" H 4850 5950 50  0001 C CNN
+	1    4850 5950
+	1    0    0    -1  
+$EndComp
+Text Notes 5250 6250 1    50   ~ 0
+Status-lampe sensor 2
+Text Notes 4100 6250 0    50   ~ 0
+Vannsensor 3
+$Comp
+L power:GND #PWR0108
+U 1 1 621AED67
+P 4450 5650
+F 0 "#PWR0108" H 4450 5400 50  0001 C CNN
+F 1 "GND" H 4455 5477 50  0000 C CNN
+F 2 "" H 4450 5650 50  0001 C CNN
+F 3 "" H 4450 5650 50  0001 C CNN
+	1    4450 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R93
+U 1 1 621AED6D
+P 3700 5850
+F 0 "R93" H 3770 5896 50  0000 L CNN
+F 1 "1MΩ" H 3770 5805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3630 5850 50  0001 C CNN
+F 3 "~" H 3700 5850 50  0001 C CNN
+	1    3700 5850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q30
+U 1 1 621AED74
+P 4100 5450
+F 0 "Q30" V 4428 5450 50  0000 C CNN
+F 1 "BC547" V 4337 5450 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4300 5375 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4100 5450 50  0001 L CNN
+	1    4100 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 5350 4450 5350
+Connection ~ 4450 5350
+Text Notes 3400 6000 1    50   ~ 10
+NOTE: R93 is only to\nillustrate the poor\nconductivity of fresh water!\nDo not add to PCB!
+Wire Wire Line
+	4450 5350 4850 5350
+Wire Wire Line
+	4450 5350 4450 5250
+Wire Wire Line
+	3400 6400 3400 5350
+$Comp
+L Device:R R41
+U 1 1 621B2656
+P 1950 5500
+F 0 "R41" H 2020 5546 50  0000 L CNN
+F 1 "100kΩ" H 2020 5455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1880 5500 50  0001 C CNN
+F 3 "~" H 1950 5500 50  0001 C CNN
+	1    1950 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R42
+U 1 1 621B265C
+P 2350 5800
+F 0 "R42" V 2143 5800 50  0000 C CNN
+F 1 "100Ω" V 2234 5800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2280 5800 50  0001 C CNN
+F 3 "~" H 2350 5800 50  0001 C CNN
+	1    2350 5800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D40
+U 1 1 621B2662
+P 2350 5500
+F 0 "D40" H 2343 5716 50  0000 C CNN
+F 1 "LED" H 2343 5625 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 2350 5500 50  0001 C CNN
+F 3 "~" H 2350 5500 50  0001 C CNN
+	1    2350 5500
+	0    1    -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW40
+U 1 1 621B2668
+P 1400 6000
+F 0 "SW40" H 1400 6285 50  0000 C CNN
+F 1 "SW_Push" H 1400 6194 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P7.62mm_Drill2.5mm" H 1400 6200 50  0001 C CNN
+F 3 "~" H 1400 6200 50  0001 C CNN
+	1    1400 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 621B266E
+P 2350 5950
+F 0 "#PWR0109" H 2350 5700 50  0001 C CNN
+F 1 "GND" V 2355 5822 50  0000 R CNN
+F 2 "" H 2350 5950 50  0001 C CNN
+F 3 "" H 2350 5950 50  0001 C CNN
+	1    2350 5950
+	1    0    0    -1  
+$EndComp
+Text Notes 2750 6250 1    50   ~ 0
+Status-lampe sensor 2
+Text Notes 1600 6250 0    50   ~ 0
+Vannsensor 4
+$Comp
+L power:GND #PWR0110
+U 1 1 621B2676
+P 1950 5650
+F 0 "#PWR0110" H 1950 5400 50  0001 C CNN
+F 1 "GND" H 1955 5477 50  0000 C CNN
+F 2 "" H 1950 5650 50  0001 C CNN
+F 3 "" H 1950 5650 50  0001 C CNN
+	1    1950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R94
+U 1 1 621B267C
+P 1200 5850
+F 0 "R94" H 1270 5896 50  0000 L CNN
+F 1 "1MΩ" H 1270 5805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1130 5850 50  0001 C CNN
+F 3 "~" H 1200 5850 50  0001 C CNN
+	1    1200 5850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q40
+U 1 1 621B2683
+P 1600 5450
+F 0 "Q40" V 1928 5450 50  0000 C CNN
+F 1 "BC547" V 1837 5450 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1800 5375 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 1600 5450 50  0001 L CNN
+	1    1600 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1800 5350 1950 5350
+Connection ~ 1950 5350
+Text Notes 900  6000 1    50   ~ 10
+NOTE: R94 is only to\nillustrate the poor\nconductivity of fresh water!\nDo not add to PCB!
+Wire Wire Line
+	1950 5350 2350 5350
+Wire Wire Line
+	1950 5350 1950 5250
+Wire Wire Line
+	900  6400 900  5350
+Wire Wire Line
+	5950 6400 3400 6400
+Connection ~ 5950 6400
+Wire Wire Line
+	3400 6400 900  6400
+Connection ~ 3400 6400
+Connection ~ 6650 5650
+Wire Wire Line
+	6650 5650 6650 6000
+Wire Wire Line
+	5950 5350 6250 5350
+Wire Wire Line
+	6250 5700 6250 5350
+Connection ~ 6250 5350
+Wire Wire Line
+	6250 5350 6450 5350
+Wire Wire Line
+	4100 6000 4100 5650
+Wire Wire Line
+	3400 5350 3700 5350
+Wire Wire Line
+	3700 5700 3700 5350
+Connection ~ 3700 5350
+Wire Wire Line
+	3700 5350 3900 5350
+Wire Wire Line
+	900  5350 1200 5350
+Wire Wire Line
+	1200 5700 1200 5350
+Connection ~ 1200 5350
+Wire Wire Line
+	1200 5350 1400 5350
+Wire Wire Line
+	1600 6000 1600 5650
+Text Notes 9100 3050 0    50   ~ 0
+Pumpe 1
+Text GLabel 8150 4350 3    50   Output ~ 0
+Sensor2
+Text GLabel 7000 5250 1    50   Input ~ 0
+Sensor2
+Wire Wire Line
+	7000 5250 7000 5350
+Text GLabel 8250 4350 3    50   Output ~ 0
+Sensor1
+Text GLabel 9550 5250 1    50   Input ~ 0
+Sensor1
+Wire Wire Line
+	9550 5350 9550 5250
+NoConn ~ 8750 3850
+NoConn ~ 8450 4350
+NoConn ~ 7950 3550
+NoConn ~ 8050 3550
+NoConn ~ 8050 4350
+NoConn ~ 7950 4350
+Wire Wire Line
+	6950 3950 7150 3950
+NoConn ~ 8350 3550
+Text GLabel 8350 4350 3    50   Output ~ 0
+Pump1
 $Comp
 L MCU_Module:WeMos_D1_mini U1
 U 1 1 5E4EF27A
-P 6900 2600
-F 0 "U1" H 6900 1529 50  0000 C CNN
-F 1 "WeMos_D1_mini" H 6900 1620 50  0000 C CNN
-F 2 "Module:WEMOS_D1_mini_light" H 6900 1711 50  0000 C CNN
-F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 5050 1450 50  0001 C CNN
-	1    6900 2600
-	-1   0    0    1   
-$EndComp
-NoConn ~ 7000 3400
-Wire Wire Line
-	6350 2800 6500 2800
-Wire Wire Line
-	6350 2800 6350 3750
-Wire Wire Line
-	3850 2900 6500 2900
-$Comp
-L Device:R R9
-U 1 1 6191AA0D
-P 4000 2650
-F 0 "R9" V 4207 2650 50  0000 C CNN
-F 1 "1kΩ" V 4116 2650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3930 2650 50  0001 C CNN
-F 3 "~" H 4000 2650 50  0001 C CNN
-	1    4000 2650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R8
-U 1 1 6190A448
-P 4300 2650
-F 0 "R8" V 4507 2650 50  0000 C CNN
-F 1 "1kΩ" V 4416 2650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4230 2650 50  0001 C CNN
-F 3 "~" H 4300 2650 50  0001 C CNN
-	1    4300 2650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Barrel_Jack J1
-U 1 1 6209C40C
-P 2900 1050
-F 0 "J1" V 2911 1238 50  0000 L CNN
-F 1 "Barrel_Jack" V 3002 1238 50  0000 L CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 2950 1010 50  0001 C CNN
-F 3 "~" H 2950 1010 50  0001 C CNN
-	1    2900 1050
+P 7950 3950
+F 0 "U1" H 7950 2879 50  0000 C CNN
+F 1 "WeMos_D1_mini" H 7950 2970 50  0000 C CNN
+F 2 "Module:WEMOS_D1_mini_light" H 7950 3061 50  0000 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 6100 2800 50  0001 C CNN
+	1    7950 3950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2900 1700 2900 1350
-Wire Wire Line
-	2900 1350 3000 1350
+	8750 3950 9000 3950
 $Comp
-L SRD-05VDC-SL-C:SRD-05VDC-SL-C K1
+L power:GND #PWR0107
+U 1 1 61935FC2
+P 9900 2050
+F 0 "#PWR0107" H 9900 1800 50  0001 C CNN
+F 1 "GND" H 9905 1877 50  0000 C CNN
+F 2 "" H 9900 2050 50  0001 C CNN
+F 3 "" H 9900 2050 50  0001 C CNN
+	1    9900 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q50
+U 1 1 6193208C
+P 9700 2150
+F 0 "Q50" H 9891 2104 50  0000 L CNN
+F 1 "BC547" H 9891 2195 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9900 2075 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 9700 2150 50  0001 L CNN
+	1    9700 2150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9000 1900
+Wire Wire Line
+	8850 1900 9000 1900
+$Comp
+L SRD-05VDC-SL-C:SRD-05VDC-SL-C K50
 U 1 1 61905479
-P 2900 2000
-F 0 "K1" V 2946 1670 50  0000 R CNN
-F 1 "SRD-05VDC-SL-C" V 2855 1670 50  0000 R CNN
-F 2 "SRD-05VDC-SL-C:RELAY_SRD-05VDC-SL-C" H 2900 2000 50  0001 L BNN
-F 3 "" H 2900 2000 50  0001 L BNN
-F 4 "IPC-7251" H 2900 2000 50  0001 L BNN "STANDARD"
-F 5 "SONGLE RELAY" H 2900 2000 50  0001 L BNN "MANUFACTURER"
-	1    2900 2000
+P 9100 1600
+F 0 "K50" V 9146 1270 50  0000 R CNN
+F 1 "SRD-05VDC-SL-C" V 9055 1270 50  0000 R CNN
+F 2 "SRD-05VDC-SL-C:RELAY_SRD-05VDC-SL-C" H 9100 1600 50  0001 L BNN
+F 3 "" H 9100 1600 50  0001 L BNN
+F 4 "IPC-7251" H 9100 1600 50  0001 L BNN "STANDARD"
+F 5 "SONGLE RELAY" H 9100 1600 50  0001 L BNN "MANUFACTURER"
+	1    9100 1600
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2800 1700 2800 1350
+	9500 2050 9300 2050
+Connection ~ 9300 2050
 Wire Wire Line
-	2800 5200 7550 5200
+	9300 2050 9300 2500
+Text Notes 8600 6100 0    50   ~ 0
+REPLACE WITH MONO JACK
+Text Notes 6050 6100 0    50   ~ 0
+REPLACE WITH MONO JACK
+Text Notes 3500 6100 0    50   ~ 0
+REPLACE WITH MONO JACK
+Text Notes 1050 6100 0    50   ~ 0
+REPLACE WITH MONO JACK
 Wire Wire Line
-	7550 5200 7550 3550
+	8750 4050 11050 4050
 Wire Wire Line
-	7550 3550 6900 3550
+	11050 4050 11050 6400
 Wire Wire Line
-	6900 3550 6900 3400
+	9000 2500 9000 3100
+Text Notes 8200 650  0    50   ~ 0
+Connect 12V Pump circuit with barrel jack (> 4A)
+$Comp
+L Device:LED D62
+U 1 1 62268161
+P 4600 2050
+F 0 "D62" H 4593 2266 50  0000 C CNN
+F 1 "LED" H 4593 2175 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4600 2050 50  0001 C CNN
+F 3 "~" H 4600 2050 50  0001 C CNN
+	1    4600 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R63
+U 1 1 62268167
+P 4600 2350
+F 0 "R63" V 4393 2350 50  0000 C CNN
+F 1 "370Ω" V 4484 2350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4530 2350 50  0001 C CNN
+F 3 "~" H 4600 2350 50  0001 C CNN
+	1    4600 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D61
+U 1 1 6226816D
+P 4900 2500
+F 0 "D61" H 4900 2284 50  0000 C CNN
+F 1 "STPS3L60RL" H 4900 2375 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp" H 4900 2500 50  0001 C CNN
+F 3 "~" H 4900 2500 50  0001 C CNN
+	1    4900 2500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5050 1300
+$Comp
+L Connector:Barrel_Jack J60
+U 1 1 62268174
+P 4750 900
+F 0 "J60" V 4761 1088 50  0000 L CNN
+F 1 "Barrel_Jack" V 4852 1088 50  0000 L CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 4800 860 50  0001 C CNN
+F 3 "~" H 4800 860 50  0001 C CNN
+	1    4750 900 
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	2800 3150 2800 5200
+	4750 1300 4650 1200
+Connection ~ 4750 2500
 Wire Wire Line
-	3550 2850 3550 3150
-Connection ~ 2800 3150
+	5050 1900 5050 2050
 Wire Wire Line
-	2800 2450 2800 2300
+	4750 1900 4750 2500
 Wire Wire Line
-	3100 2300 3100 3150
-Connection ~ 3100 3150
+	4750 2500 4600 2500
 Wire Wire Line
-	2400 2450 2800 2450
-Connection ~ 2800 2450
+	4850 1200 4850 1300
+Text Notes 4850 3050 0    50   ~ 0
+Pumpe 2
+$Comp
+L power:GND #PWR?
+U 1 1 62268181
+P 5650 2050
+F 0 "#PWR?" H 5650 1800 50  0001 C CNN
+F 1 "GND" H 5655 1877 50  0000 C CNN
+F 2 "" H 5650 2050 50  0001 C CNN
+F 3 "" H 5650 2050 50  0001 C CNN
+	1    5650 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q60
+U 1 1 62268187
+P 5450 2150
+F 0 "Q60" H 5641 2104 50  0000 L CNN
+F 1 "BC547" H 5641 2195 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5650 2075 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5450 2150 50  0001 L CNN
+	1    5450 2150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4750 1900
 Wire Wire Line
-	2800 2450 2800 3150
+	4600 1900 4750 1900
+$Comp
+L SRD-05VDC-SL-C:SRD-05VDC-SL-C K60
+U 1 1 62268191
+P 4850 1600
+F 0 "K60" V 4896 1270 50  0000 R CNN
+F 1 "SRD-05VDC-SL-C" V 4805 1270 50  0000 R CNN
+F 2 "SRD-05VDC-SL-C:RELAY_SRD-05VDC-SL-C" H 4850 1600 50  0001 L BNN
+F 3 "" H 4850 1600 50  0001 L BNN
+F 4 "IPC-7251" H 4850 1600 50  0001 L BNN "STANDARD"
+F 5 "SONGLE RELAY" H 4850 1600 50  0001 L BNN "MANUFACTURER"
+	1    4850 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R61
+U 1 1 62268197
+P 5900 2500
+F 0 "R61" V 6107 2500 50  0000 C CNN
+F 1 "1kΩ" V 6016 2500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5830 2500 50  0001 C CNN
+F 3 "~" H 5900 2500 50  0001 C CNN
+	1    5900 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R62
+U 1 1 6226819D
+P 5600 2500
+F 0 "R62" V 5807 2500 50  0000 C CNN
+F 1 "1kΩ" V 5716 2500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5530 2500 50  0001 C CNN
+F 3 "~" H 5600 2500 50  0001 C CNN
+	1    5600 2500
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	2400 3150 2800 3150
+	6050 2500 6250 2500
 Wire Wire Line
-	2400 2850 2400 2750
-NoConn ~ 6500 2300
+	5250 2050 5050 2050
+Connection ~ 5050 2050
+Wire Wire Line
+	5050 2050 5050 2500
+Text Notes 3950 650  0    50   ~ 0
+Connect 12V Pump circuit with barrel jack (> 4A)
+$Comp
+L Device:LED D72
+U 1 1 6226D8EB
+P 1800 2050
+F 0 "D72" H 1793 2266 50  0000 C CNN
+F 1 "LED" H 1793 2175 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 1800 2050 50  0001 C CNN
+F 3 "~" H 1800 2050 50  0001 C CNN
+	1    1800 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R73
+U 1 1 6226D8F1
+P 1800 2350
+F 0 "R73" V 1593 2350 50  0000 C CNN
+F 1 "370Ω" V 1684 2350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 2350 50  0001 C CNN
+F 3 "~" H 1800 2350 50  0001 C CNN
+	1    1800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D71
+U 1 1 6226D8F7
+P 2100 2500
+F 0 "D71" H 2100 2284 50  0000 C CNN
+F 1 "STPS3L60RL" H 2100 2375 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp" H 2100 2500 50  0001 C CNN
+F 3 "~" H 2100 2500 50  0001 C CNN
+	1    2100 2500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2250 1300
+$Comp
+L Connector:Barrel_Jack J70
+U 1 1 6226D8FE
+P 1950 900
+F 0 "J70" V 1961 1088 50  0000 L CNN
+F 1 "Barrel_Jack" V 2052 1088 50  0000 L CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 2000 860 50  0001 C CNN
+F 3 "~" H 2000 860 50  0001 C CNN
+	1    1950 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 1300 1850 1200
+Connection ~ 1950 2500
+Wire Wire Line
+	2250 1900 2250 2050
+Wire Wire Line
+	1950 1900 1950 2500
+Wire Wire Line
+	1950 2500 1800 2500
+Wire Wire Line
+	2050 1200 2050 1300
+Text Notes 2050 3050 0    50   ~ 0
+Pumpe 3
+$Comp
+L power:GND #PWR?
+U 1 1 6226D90B
+P 2850 2050
+F 0 "#PWR?" H 2850 1800 50  0001 C CNN
+F 1 "GND" H 2855 1877 50  0000 C CNN
+F 2 "" H 2850 2050 50  0001 C CNN
+F 3 "" H 2850 2050 50  0001 C CNN
+	1    2850 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q70
+U 1 1 6226D911
+P 2650 2150
+F 0 "Q70" H 2841 2104 50  0000 L CNN
+F 1 "BC547" H 2841 2195 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2850 2075 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 2650 2150 50  0001 L CNN
+	1    2650 2150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1950 1900
+Wire Wire Line
+	1800 1900 1950 1900
+$Comp
+L SRD-05VDC-SL-C:SRD-05VDC-SL-C K70
+U 1 1 6226D91B
+P 2050 1600
+F 0 "K70" V 2096 1270 50  0000 R CNN
+F 1 "SRD-05VDC-SL-C" V 2005 1270 50  0000 R CNN
+F 2 "SRD-05VDC-SL-C:RELAY_SRD-05VDC-SL-C" H 2050 1600 50  0001 L BNN
+F 3 "" H 2050 1600 50  0001 L BNN
+F 4 "IPC-7251" H 2050 1600 50  0001 L BNN "STANDARD"
+F 5 "SONGLE RELAY" H 2050 1600 50  0001 L BNN "MANUFACTURER"
+	1    2050 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2450 2050 2250 2050
+Connection ~ 2250 2050
+Wire Wire Line
+	2250 2050 2250 2500
+Wire Wire Line
+	1950 2500 1950 3100
+Text Notes 1150 650  0    50   ~ 0
+Connect 12V Pump circuit with barrel jack (> 4A)
+Text GLabel 6250 2500 2    50   Input ~ 0
+Pump2
+Text GLabel 10500 2500 2    50   Input ~ 0
+Pump1
+Wire Wire Line
+	10300 2500 10500 2500
+$Comp
+L Device:R R52
+U 1 1 6191AA0D
+P 9850 2500
+F 0 "R52" V 10057 2500 50  0000 C CNN
+F 1 "1kΩ" V 9966 2500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9780 2500 50  0001 C CNN
+F 3 "~" H 9850 2500 50  0001 C CNN
+	1    9850 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R51
+U 1 1 6190A448
+P 10150 2500
+F 0 "R51" V 10357 2500 50  0000 C CNN
+F 1 "1kΩ" V 10266 2500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10080 2500 50  0001 C CNN
+F 3 "~" H 10150 2500 50  0001 C CNN
+	1    10150 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9700 2350 9700 2500
+Wire Wire Line
+	3250 2500 3450 2500
+$Comp
+L Device:R R72
+U 1 1 6226D927
+P 2800 2500
+F 0 "R72" V 3007 2500 50  0000 C CNN
+F 1 "1kΩ" V 2916 2500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2730 2500 50  0001 C CNN
+F 3 "~" H 2800 2500 50  0001 C CNN
+	1    2800 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R71
+U 1 1 6226D921
+P 3100 2500
+F 0 "R71" V 3307 2500 50  0000 C CNN
+F 1 "1kΩ" V 3216 2500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3030 2500 50  0001 C CNN
+F 3 "~" H 3100 2500 50  0001 C CNN
+	1    3100 2500
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3450 2500 2    50   Input ~ 0
+Pump3
+Wire Wire Line
+	2650 2500 2650 2350
+Wire Wire Line
+	5450 2500 5450 2350
+Wire Wire Line
+	9000 3100 4750 3100
+Wire Wire Line
+	4750 2500 4750 3100
+Connection ~ 9000 3100
+Wire Wire Line
+	9000 3100 9000 3950
+Connection ~ 4750 3100
+Wire Wire Line
+	4750 3100 1950 3100
 $EndSCHEMATC
