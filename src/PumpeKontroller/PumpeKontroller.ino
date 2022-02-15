@@ -8,21 +8,25 @@
 
 
 // PROSJEKT 1)
+int noOfSensors = 2;
+int noOfPumps = 1;
 
 // Signals in
 int sensor1 = D1;
 int sensor2 = D2;
-//int sensor3 = D3; // TODO: D3 oppfører seg rart. Hvordan få den til å oppføre seg på samme måte som D1?
-//int sensor4 = D4; // TODO: D4 oppfører seg rart. Hvordan få den til å oppføre seg på samme måte som D2?
-//int sensor5 = D5; // Oppfører seg på samme måte som D1
-//int sensor6 = D6; // Oppfører seg på samme måte som D2
-//int sensor7 = D7; // Oppfører seg på samme måte som D1
-//int sensor8 = D8; // Oppfører seg på samme måte som D2
+//int sensor3 = D5; // Oppfører seg på samme måte som D1
+//int sensor4 = D6; // Oppfører seg på samme måte som D2
+
+// FUTUREs
+//int sensor5 = D3; // TODO: D3 oppfører seg rart. Hvordan få den til å oppføre seg på samme måte som D1?
+//int sensor6 = D4; // TODO: D4 oppfører seg rart. Hvordan få den til å oppføre seg på samme måte som D2?
 //int sensorAnalog = A0;;
 
 // Signals out
-int pump = D0; // Oppfører seg på samme måte som D7, jeg bruker hermed D0 til å styre pumpen
-int pumpLight = D7;
+int pump1 = D0; // Oppfører seg på samme måte som D7, jeg bruker hermed D0 til å styre pumpen
+//int pumpLight = D7; // Pumpelyset er nå lagt i parallell med signalet til 12V-reléet
+//int pump2 = D7; // Oppfører seg på samme måte som D1
+//int pump3 = D8; // Oppfører seg på samme måte som D2
 
 void setup() {
 
@@ -31,8 +35,8 @@ void setup() {
   pinMode(sensor2, INPUT);
 
   // Definer output-pins
-  pinMode(pump, OUTPUT);
-  pinMode(pumpLight, OUTPUT);
+  pinMode(pump1, OUTPUT);
+  //pinMode(pumpLight, OUTPUT);
   
   
   // Turn on built-in LED when the controller has power
@@ -44,18 +48,23 @@ void loop() {
 
   // Logikk  <- Mer robust logikk: hvis begge sensorene er på, slå på pumpen. Hvis begge sensorene slås av, slå av pumpen.
   if (digitalRead(sensor1) == HIGH && digitalRead(sensor2) == HIGH) {
-      digitalWrite(pump, HIGH);
-      digitalWrite(pumpLight, HIGH);
+      digitalWrite(pump1, HIGH);
+      //digitalWrite(pumpLight, HIGH);
   }
   else if (digitalRead(sensor1) == LOW && digitalRead(sensor2) == LOW) {
-    digitalWrite(pump, LOW);
-    digitalWrite(pumpLight, LOW);
+    digitalWrite(pump1, LOW);
+    //digitalWrite(pumpLight, LOW);
   }
 
   // Feil-sjekking
   // Hvis det er feil på nedre sensor: Hvor lenge pumpa går om gangen bør tidsbegrenses. Bruke stoppeklokke for måle hvor lang tid det tar å tømme brønnen, dette er ganske konstant, evt. mål volumstrømmen fra pumpa opp i en bøtte (f.eks. hvor lang tid tar det å pumpe 10 liter?). Aktiver warning (lys og melding) om at nedre sensor streiker)
   // Hvis det er feil på øvre sensor, ha en 3. back-up sensor sammen med øvre sensor. rett over som starter pumpa hvis sensoren aktiveres og pumpa ikke er i gang.
   // Hvis det er feil på pumpa, eller batteriet er tomt: Sensor 2 og 3 er aktivert en viss tidsvarighet. Hvis pumpa går, skal vannet synke under topp-sensorene ganske raskt - bruke stoppeklokke for å finne tida.
+
+  // TODO:
+  // Legg til kode for pumpe 2
+  // Legg til kode for pumpe 3
+  // Logikk: Opptil 4 veloppdragne sensorer (kan ha to til hvis jeg skjønner meg på D3 og D4), opptil 3 pumper
   
 }
 
